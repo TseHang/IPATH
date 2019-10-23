@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "IPATH/static/css/main.b5883041.chunk.css",
-    "main.js": "IPATH/static/js/main.1371049f.chunk.js",
-    "main.js.map": "IPATH/static/js/main.1371049f.chunk.js.map",
-    "runtime-main.js": "IPATH/static/js/runtime-main.9d053b39.js",
-    "runtime-main.js.map": "IPATH/static/js/runtime-main.9d053b39.js.map",
-    "static/js/2.8b28d117.chunk.js": "IPATH/static/js/2.8b28d117.chunk.js",
-    "static/js/2.8b28d117.chunk.js.map": "IPATH/static/js/2.8b28d117.chunk.js.map",
-    "index.html": "IPATH/index.html",
-    "precache-manifest.473cf48dc693e2b104d72048a7331608.js": "IPATH/precache-manifest.473cf48dc693e2b104d72048a7331608.js",
-    "service-worker.js": "IPATH/service-worker.js",
-    "static/css/main.b5883041.chunk.css.map": "IPATH/static/css/main.b5883041.chunk.css.map",
-    "static/media/IPATH.jpg": "IPATH/static/media/IPATH.b509e81f.jpg",
-    "static/media/Tainan.jpg": "IPATH/static/media/Tainan.07a25232.jpg",
-    "static/media/principle.png": "IPATH/static/media/principle.1653b77f.png"
+    "main.css": "/IPATH/static/css/main.b5883041.chunk.css",
+    "main.js": "/IPATH/static/js/main.f7d585f0.chunk.js",
+    "main.js.map": "/IPATH/static/js/main.f7d585f0.chunk.js.map",
+    "runtime-main.js": "/IPATH/static/js/runtime-main.8401553d.js",
+    "runtime-main.js.map": "/IPATH/static/js/runtime-main.8401553d.js.map",
+    "static/js/2.7f8a09d0.chunk.js": "/IPATH/static/js/2.7f8a09d0.chunk.js",
+    "static/js/2.7f8a09d0.chunk.js.map": "/IPATH/static/js/2.7f8a09d0.chunk.js.map",
+    "index.html": "/IPATH/index.html",
+    "precache-manifest.d0c416dd2f59f47fc6431d6689b61db9.js": "/IPATH/precache-manifest.d0c416dd2f59f47fc6431d6689b61db9.js",
+    "service-worker.js": "/IPATH/service-worker.js",
+    "static/css/main.b5883041.chunk.css.map": "/IPATH/static/css/main.b5883041.chunk.css.map",
+    "static/media/IPATH.jpg": "/IPATH/static/media/IPATH.b509e81f.jpg",
+    "static/media/Tainan.jpg": "/IPATH/static/media/Tainan.07a25232.jpg",
+    "static/media/principle.png": "/IPATH/static/media/principle.1653b77f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d053b39.js",
-    "static/js/2.8b28d117.chunk.js",
+    "static/js/runtime-main.8401553d.js",
+    "static/js/2.7f8a09d0.chunk.js",
     "static/css/main.b5883041.chunk.css",
-    "static/js/main.1371049f.chunk.js"
+    "static/js/main.f7d585f0.chunk.js"
   ]
 }
