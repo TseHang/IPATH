@@ -10,7 +10,7 @@ const Rectangle = styled.div`
   height: 43vh;
   left: 0;
   bottom: 10vh;
-  background-color: #000000;
+  background-color: #444a4c;
   display: flex;
 
   .circle {
