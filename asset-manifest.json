@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/IPATH/static/css/main.64072854.chunk.css",
-    "main.js": "/IPATH/static/js/main.bb1ca79a.chunk.js",
-    "main.js.map": "/IPATH/static/js/main.bb1ca79a.chunk.js.map",
+    "main.js": "/IPATH/static/js/main.273d4f71.chunk.js",
+    "main.js.map": "/IPATH/static/js/main.273d4f71.chunk.js.map",
     "runtime-main.js": "/IPATH/static/js/runtime-main.eaa17d45.js",
     "runtime-main.js.map": "/IPATH/static/js/runtime-main.eaa17d45.js.map",
-    "static/js/2.f99eda9f.chunk.js": "/IPATH/static/js/2.f99eda9f.chunk.js",
-    "static/js/2.f99eda9f.chunk.js.map": "/IPATH/static/js/2.f99eda9f.chunk.js.map",
+    "static/js/2.78b26452.chunk.js": "/IPATH/static/js/2.78b26452.chunk.js",
+    "static/js/2.78b26452.chunk.js.map": "/IPATH/static/js/2.78b26452.chunk.js.map",
     "index.html": "/IPATH/index.html",
-    "precache-manifest.5e94ee60061756148dd1f3a1b54a9e64.js": "/IPATH/precache-manifest.5e94ee60061756148dd1f3a1b54a9e64.js",
+    "precache-manifest.2c2cd75f252bcfb5600cf7f6181f312e.js": "/IPATH/precache-manifest.2c2cd75f252bcfb5600cf7f6181f312e.js",
     "service-worker.js": "/IPATH/service-worker.js",
     "static/css/main.64072854.chunk.css.map": "/IPATH/static/css/main.64072854.chunk.css.map",
     "static/media/IPATH.jpg": "/IPATH/static/media/IPATH.b509e81f.jpg",
@@ -17,12 +17,13 @@
     "static/media/productbb.png": "/IPATH/static/media/productbb.be9ed0f5.png",
     "static/media/profilebb.png": "/IPATH/static/media/profilebb.908b1efc.png",
     "static/media/selecbb.png": "/IPATH/static/media/selecbb.e6586a32.png",
+    "static/media/souvenir.jpg": "/IPATH/static/media/souvenir.1356733d.jpg",
     "static/media/tainan_sportbb.png": "/IPATH/static/media/tainan_sportbb.11a4e9e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eaa17d45.js",
-    "static/js/2.f99eda9f.chunk.js",
+    "static/js/2.78b26452.chunk.js",
     "static/css/main.64072854.chunk.css",
-    "static/js/main.bb1ca79a.chunk.js"
+    "static/js/main.273d4f71.chunk.js"
   ]
 }
