@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "792d5a65a6df815f890790c7dbd80653",
+    "revision": "7cc13d3ba60e4affa460bb89dc53397b",
     "url": "/IPATH/index.html"
   },
   {
-    "revision": "537593b5a159af716a60",
+    "revision": "8be02e97a6780a33d741",
     "url": "/IPATH/static/css/main.64072854.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/IPATH/static/js/2.f99eda9f.chunk.js"
   },
   {
-    "revision": "537593b5a159af716a60",
-    "url": "/IPATH/static/js/main.dcdec74a.chunk.js"
+    "revision": "8be02e97a6780a33d741",
+    "url": "/IPATH/static/js/main.5c582b68.chunk.js"
   },
   {
     "revision": "a54d0ea7f40975be1017",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4b1295eed5643c220de0d91800508fef",
     "url": "/IPATH/static/media/drink_bag.4b1295ee.png"
-  },
-  {
-    "revision": "1653b77f596b67892122959cd5fc5e00",
-    "url": "/IPATH/static/media/principle.1653b77f.png"
   },
   {
     "revision": "be9ed0f5cfc5eaed3351880b0088ca49",
