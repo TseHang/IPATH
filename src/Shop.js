@@ -72,7 +72,7 @@ const BlockRight = styled.div`
     position: relative;
     margin-right: 2vw;
     background-image: url(${FAImg});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 `;
@@ -88,7 +88,7 @@ const BlockLeft = styled.div`
     position: relative;
     margin-right: 2vw;
     background-image: url(${drinkImg});
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 `;
@@ -147,7 +147,7 @@ const ConfirmBlock = styled.div`
     left: 27.5vw;
     background-image: url(${props => props.src});
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
 `;
 
