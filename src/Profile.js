@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-import userImg from './img/principle.png';
+import userImg from './img/guest.png';
 import bodyImg from './img/profilebb.png';
 
 const InnerBoby = styled.div`
@@ -83,6 +83,8 @@ const UserPoint = styled.div`
 
 function Profile() {
     const testing_point = 116;
+    const testing_name = "Guest1";
+    const testing_id = "0001";
 
     return (
         <div className="profile">
@@ -91,8 +93,8 @@ function Profile() {
                 <div className="topBody" />
                 <UserImg src={userImg}/>
                 <UserInfo>
-                    <p className="userName">UserName</p>
-                    <p className="nickName">NickName</p>
+                    <p className="userName">{testing_name}</p>
+                    <p className="nickName">{testing_id}</p>
                 </UserInfo>
             </InnerBoby>
             <BottomBody>

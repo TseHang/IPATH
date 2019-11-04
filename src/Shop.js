@@ -269,6 +269,7 @@ function Shop() {
     const testing_item2 = "FA紀念包";
     const testing_cost1 = 100;
     const testing_cost2 = 100;
+    const testing_name = "Guest1";
 
     const [page, setPage] = useState("shop");
     const [item, setItem] = useState(null);
@@ -280,7 +281,7 @@ function Shop() {
             <div>
                 <Nav title={"IPATH 學生點數系統"}/>
                 <UserInfo src={bodyImg}>
-                    <h1>UserName</h1>
+                    <h1>{testing_name}</h1>
                     <CurrPoint>
                         <div className="dot"></div>
                         <p>目前持有 </p>

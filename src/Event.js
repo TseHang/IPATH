@@ -9,7 +9,7 @@ import TainanEvent from './components/TainanEvent';
 import ipathImg from './img/IPATH.jpg';
 import tainanImg from './img/Tainan.jpg';
 import backIcon from './img/back.png';
-import tsetingUserImg from './img/principle.png';
+import userImg from './img/guest.png';
 import bodyImg from './img/selecbb.png';
 import sport_bodyImg from './img/tainan_sportbb.png';
 
@@ -215,6 +215,8 @@ function Event(props) {
 
     var testingCalories = 0;
     var testingPoint = 116;
+    const testing_name = "Guest1";
+    const testing_id = "0001";
 
     if (page === "event") {
         return (
@@ -245,10 +247,10 @@ function Event(props) {
                 <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"踏溯台南點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
+                    <UserImg src={userImg} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{testing_name}</p>
+                        <p className="nickName">{testing_id}</p>
                     </div>
                     <div className="pointHint">
                         <div className="dot" />
@@ -272,10 +274,10 @@ function Event(props) {
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg"/>
+                    <UserImg src={userImg} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{testing_name}</p>
+                        <p className="nickName">{testing_id}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
@@ -306,10 +308,10 @@ function Event(props) {
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg"/>
+                    <UserImg src={userImg} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{testing_name}</p>
+                        <p className="nickName">{testing_id}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
