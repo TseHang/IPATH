@@ -9,16 +9,19 @@ import userImg from './img/principle.png';
 import bodyImg from './img/profilebb.png';
 
 const InnerBoby = styled.div`
-    height: 46.5vh;
+    height: 47vh;
     background-color: #e8e8e8;
     text-align: center;
     background-image: url(${bodyImg});
     background-repeat: no-repeat;
     background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .topBody {
         width: 100%;
-        height: 15vw;
+        height: 10vh;
         background-color: #ffffff;
     }
 `;
@@ -34,7 +37,6 @@ const UserImg = styled.img`
 
 const UserInfo = styled.div`
     width: 100%;
-    line-height: 1.5;
     transform: translateY(-2vh);
 
     .nickName {
@@ -44,7 +46,7 @@ const UserInfo = styled.div`
 
 const BottomBody = styled.div`
     width: 100%;
-    height: 20vh;
+    height: 19.5vh;
     background-color: #ffffff;
     text-align: center;
     position: absolute;
