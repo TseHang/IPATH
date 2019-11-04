@@ -9,7 +9,7 @@ import FooterExit from './components/FooterExit';
 import checkIncon from './img/check.png';
 import bodyImg from './img/productbb.png';
 import drinkImg from './img/drink_bag.png';
-import FAImg from './img/drink_bag.png';
+import souvenirImg from './img/souvenir.jpg';
 
 // SHOP PAGE
 const UserInfo = styled.div`
@@ -71,7 +71,7 @@ const BlockRight = styled.div`
     margin-top: 3vh;
     position: relative;
     margin-right: 2vw;
-    background-image: url(${FAImg});
+    background-image: url(${souvenirImg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -266,7 +266,7 @@ const RemainedPoint = styled.div`
 function Shop() {
     const testing_point = 116;
     const testing_item1 = "紅茶 + 飲料提袋";
-    const testing_item2 = "FA紀念包";
+    const testing_item2 = "藝術中心紀念品";
     const testing_cost1 = 100;
     const testing_cost2 = 100;
     const testing_name = "Guest1";
@@ -312,7 +312,7 @@ function Shop() {
                 <Nav title={"IPATH 學生點數系統"}/>
                 <ConfirmBody>
                     <p className="itemName">{item}</p>
-                    <ConfirmBlock src={item === "FA紀念包" ? drinkImg : drinkImg}/>
+                    <ConfirmBlock src={item === "藝術中心紀念品" ? souvenirImg : drinkImg}/>
                     <Cost>
                         <p>本次兌換需要 </p>
                         <p className="point">{cost}</p>
