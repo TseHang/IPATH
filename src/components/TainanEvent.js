@@ -10,7 +10,7 @@ const EventDetail = styled.div`
     box-shadow: 3px 6px 21px 0 rgba(150, 150, 150, 0.5);
     margin-left: 8.5vw;
     font-size: 24px;
-    margin-top: 2vw;
+    margin-bottom: 2vw;
     transform: translateY(-3.5vh);
     opacity: ${(props) => props.done?1:0.5};
 

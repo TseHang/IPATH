@@ -7,6 +7,9 @@ import Footer from './components/Footer';
 import FooterExit from './components/FooterExit';
 
 import checkIncon from './img/check.png';
+import bodyImg from './img/productbb.png';
+import drinkImg from './img/drink_bag.png';
+import FAImg from './img/drink_bag.png';
 
 // SHOP PAGE
 const UserInfo = styled.div`
@@ -15,6 +18,7 @@ const UserInfo = styled.div`
     text-align: center;
     line-height: 1.5;
     padding-top: 3vh;
+    background-image: url(${props => props.src});
 
     h1 {
         font-size: 29px;
@@ -61,28 +65,32 @@ const BlockRight = styled.div`
     width: 43vw;
     height: 30vh;
     background-color: #94aaad;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: soild 2px transparent;
-    box-sizing:border-box;
-    border-radius: 10%;
-    margin-top: 3vh;
-    position: relative;
-    margin-left: 2vw;
-`;
-
-const BlockLeft = styled.div`
-    width: 43vw;
-    height: 30vh;
-    background-color: #94aaad;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     border: soild 2px transparent;
     box-sizing:border-box;
     border-radius: 10%;
     margin-top: 3vh;
     position: relative;
     margin-right: 2vw;
+    background-image: url(${FAImg});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+`;
+
+const BlockLeft = styled.div`
+    width: 43vw;
+    height: 30vh;
+    background-color: #94aaad;
+    border: soild 2px transparent;
+    box-sizing:border-box;
+    border-radius: 10%;
+    margin-top: 3vh;
+    position: relative;
+    margin-right: 2vw;
+    background-image: url(${drinkImg});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 `;
 
 const ItemBlockLeft = styled.div`
@@ -137,6 +145,10 @@ const ConfirmBlock = styled.div`
     position: absolute;
     top: 32vh;
     left: 27.5vw;
+    background-image: url(${props => props.src});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 `;
 
 const Cost = styled.div`
@@ -261,12 +273,13 @@ function Shop() {
     const [page, setPage] = useState("shop");
     const [item, setItem] = useState(null);
     const [cost, setCost] = useState(0);
+    const [currPoint, setCurrPoint] = useState(testing_point);
 
     if (page === "shop") {
         return (
             <div>
                 <Nav title={"IPATH 學生點數系統"}/>
-                <UserInfo>
+                <UserInfo src={bodyImg}>
                     <h1>UserName</h1>
                     <CurrPoint>
                         <div className="dot"></div>
@@ -298,7 +311,7 @@ function Shop() {
                 <Nav title={"IPATH 學生點數系統"}/>
                 <ConfirmBody>
                     <p className="itemName">{item}</p>
-                    <ConfirmBlock />
+                    <ConfirmBlock src={item === "FA紀念包" ? drinkImg : drinkImg}/>
                     <Cost>
                         <p>本次兌換需要 </p>
                         <p className="point">{cost}</p>
@@ -306,7 +319,7 @@ function Shop() {
                     </Cost>
                     <Btn>
                         <CencelBtn onClick={() => {setPage("shop"); setItem(null); setCost(0)}}>取消兌換</CencelBtn>
-                        <ConfirmBtn onClick={() => {setPage("success");}}>確認兌換</ConfirmBtn>
+                        <ConfirmBtn onClick={() => {setPage("success"); setCurrPoint(currPoint-cost)}}>確認兌換</ConfirmBtn>
                     </Btn>
                     
                 </ConfirmBody>
@@ -329,7 +342,7 @@ function Shop() {
                     <RemainedPoint>
                         <div className="dot"></div>
                         <p>剩餘點數 </p>
-                        <p className="point">{testing_point}</p>
+                        <p className="point">{currPoint}</p>
                         <p> 點</p>
                         <div className="dot"></div>
                     </RemainedPoint>

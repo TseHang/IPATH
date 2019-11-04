@@ -10,13 +10,18 @@ import ipathImg from './img/IPATH.jpg';
 import tainanImg from './img/Tainan.jpg';
 import backIcon from './img/back.png';
 import tsetingUserImg from './img/principle.png';
+import bodyImg from './img/selecbb.png';
+import sport_bodyImg from './img/tainan_sportbb.png';
 
 const InnerBody = styled.div`
     width: 100%;
     height: 38vh;
-    background-color: #e8e8e8;
     text-align: center;
     position: relative;
+    background-image: url(${props => props.src});
+    background-repeat: np-repeat;
+    object-fit: fill;
+    background-color: #e8e8e8;
 
     .innerTitle{
         width: 100%;
@@ -215,7 +220,7 @@ function Event(props) {
         return (
             <div className="event">
                 <Nav title={"IPATH 學生點數系統"} back={false} />
-                <InnerBody style={{height: '54.5vh'}}>
+                <InnerBody src={bodyImg} style={{height: '54.5vh'}}>
                     <p className="innerTitle">活動選擇</p>
                     <EventBlockLeft src={ipathImg} onClick={() => {setPage("sportUndo")}}>
                         <BlockTitle>
@@ -239,7 +244,7 @@ function Event(props) {
             <div>
                 <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"踏溯台南點數系統"} />
-                <InnerBody>
+                <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
                         <p className="userName">UserName</p>
@@ -255,7 +260,7 @@ function Event(props) {
                 </InnerBody>
                 <BottomBody>
                     <TainanEvent title={"成大成人之道"} done={true} />
-                    <TainanEvent title={"漁鹽生態"} done={false} />
+                    <TainanEvent title={"漁鹽生態"} done={false}/>
                     <TainanEvent title={"城南舊事"} done={true} />
                 </BottomBody>
                 <Footer currPage={"event"} />
@@ -266,7 +271,7 @@ function Event(props) {
             <div>
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
-                <InnerBody>
+                <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">UserName</p>
@@ -300,7 +305,7 @@ function Event(props) {
             <div>
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
-                <InnerBody>
+                <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">UserName</p>
