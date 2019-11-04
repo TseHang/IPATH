@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/IPATH/static/css/main.7cc10eb6.chunk.css",
-    "main.js": "/IPATH/static/js/main.02c1d0bf.chunk.js",
-    "main.js.map": "/IPATH/static/js/main.02c1d0bf.chunk.js.map",
+    "main.css": "/IPATH/static/css/main.64072854.chunk.css",
+    "main.js": "/IPATH/static/js/main.dcdec74a.chunk.js",
+    "main.js.map": "/IPATH/static/js/main.dcdec74a.chunk.js.map",
     "runtime-main.js": "/IPATH/static/js/runtime-main.eaa17d45.js",
     "runtime-main.js.map": "/IPATH/static/js/runtime-main.eaa17d45.js.map",
-    "static/js/2.883c5c54.chunk.js": "/IPATH/static/js/2.883c5c54.chunk.js",
-    "static/js/2.883c5c54.chunk.js.map": "/IPATH/static/js/2.883c5c54.chunk.js.map",
+    "static/js/2.f99eda9f.chunk.js": "/IPATH/static/js/2.f99eda9f.chunk.js",
+    "static/js/2.f99eda9f.chunk.js.map": "/IPATH/static/js/2.f99eda9f.chunk.js.map",
     "index.html": "/IPATH/index.html",
-    "precache-manifest.759489ee28bad3def43c692e82d878df.js": "/IPATH/precache-manifest.759489ee28bad3def43c692e82d878df.js",
+    "precache-manifest.bc6aa0a7cd9565c9465620022613aa15.js": "/IPATH/precache-manifest.bc6aa0a7cd9565c9465620022613aa15.js",
     "service-worker.js": "/IPATH/service-worker.js",
-    "static/css/main.7cc10eb6.chunk.css.map": "/IPATH/static/css/main.7cc10eb6.chunk.css.map",
+    "static/css/main.64072854.chunk.css.map": "/IPATH/static/css/main.64072854.chunk.css.map",
     "static/media/IPATH.jpg": "/IPATH/static/media/IPATH.b509e81f.jpg",
     "static/media/Tainan.jpg": "/IPATH/static/media/Tainan.07a25232.jpg",
-    "static/media/principle.png": "/IPATH/static/media/principle.1653b77f.png"
+    "static/media/drink_bag.png": "/IPATH/static/media/drink_bag.4b1295ee.png",
+    "static/media/principle.png": "/IPATH/static/media/principle.1653b77f.png",
+    "static/media/productbb.png": "/IPATH/static/media/productbb.be9ed0f5.png",
+    "static/media/profilebb.png": "/IPATH/static/media/profilebb.908b1efc.png",
+    "static/media/selecbb.png": "/IPATH/static/media/selecbb.e6586a32.png",
+    "static/media/tainan_sportbb.png": "/IPATH/static/media/tainan_sportbb.11a4e9e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.eaa17d45.js",
-    "static/js/2.883c5c54.chunk.js",
-    "static/css/main.7cc10eb6.chunk.css",
-    "static/js/main.02c1d0bf.chunk.js"
+    "static/js/2.f99eda9f.chunk.js",
+    "static/css/main.64072854.chunk.css",
+    "static/js/main.dcdec74a.chunk.js"
   ]
 }
