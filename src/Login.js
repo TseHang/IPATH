@@ -49,7 +49,7 @@ function Login(props) {
   const onScan = data => {
     if (data) {
       setResult(data);
-      alert(`我掃到的資料是：${data}`);
+      alert(`歡迎：${data}`);
       props.history.push("/profile");
     }
   };
