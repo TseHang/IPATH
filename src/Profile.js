@@ -87,7 +87,7 @@ function Profile() {
 
     return (
         <div className="profile">
-            <Nav title={"IPATH 學生點數系統"}/>
+            <Nav title={"iPATH 學生點數系統"}/>
             <InnerBoby>
                 <div className="topBody" />
                 <UserImg src={User.img}/>

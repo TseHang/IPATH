@@ -281,7 +281,7 @@ function Shop() {
     if (page === "shop") {
         return (
             <div>
-                <Nav title={"IPATH 學生點數系統"}/>
+                <Nav title={"iPATH 學生點數系統"}/>
                 <UserInfo src={bodyImg}>
                     <h1>{User.name}</h1>
                     <CurrPoint>
@@ -311,7 +311,7 @@ function Shop() {
     } else if (page === "confirm") {
         return (
             <div>
-                <Nav title={"IPATH 學生點數系統"}/>
+                <Nav title={"iPATH 學生點數系統"}/>
                 <ConfirmBody>
                     <p className="itemName">{item}</p>
                     <ConfirmBlock src={item === "藝術中心紀念品" ? souvenirImg : drinkImg}/>
@@ -332,7 +332,7 @@ function Shop() {
     } else if (page === "success") {
         return (
             <div>
-                <Nav title={"IPATH 學生點數系統"}/>
+                <Nav title={"iPATH 學生點數系統"}/>
                 <SuccessBody>
                     <SuccessIcon>
                         <Circle src={checkIncon} alt="circle" style={{transform: 'translateX(5vw)'}}/>

@@ -219,7 +219,7 @@ function Event(props) {
     if (page === "event") {
         return (
             <div className="event">
-                <Nav title={"IPATH 學生點數系統"} back={false} />
+                <Nav title={"iPATH 學生點數系統"} back={false} />
                 <InnerBody src={bodyImg} style={{height: '54.5vh'}}>
                     <p className="innerTitle">活動選擇</p>
                     <EventBlockLeft src={ipathImg} onClick={() => {setPage("sportUndo")}}>
@@ -270,7 +270,7 @@ function Event(props) {
         return (
             <div>
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
-                <Nav title={"IPATH 學生點數系統"} />
+                <Nav title={"iPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
@@ -304,7 +304,7 @@ function Event(props) {
         return (
             <div>
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
-                <Nav title={"IPATH 學生點數系統"} />
+                <Nav title={"iPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">

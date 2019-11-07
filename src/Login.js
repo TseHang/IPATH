@@ -98,8 +98,8 @@ function Login(props) {
       </p> */}
       <div className="Oval-Copy">
         <div className="title">
-          <p className="CH-Title">IPATH 學生點數系統</p>
-          <p className="EN-Title">IPATH Student Point System</p>
+          <p className="CH-Title">iPATH 學生點數系統</p>
+          <p className="EN-Title">iPATH Student Point System</p>
         </div>
         <div className="desh"></div>
       </div>
