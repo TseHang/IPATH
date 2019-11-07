@@ -247,7 +247,7 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={User.img} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
-                        <p className="userName">{User.name}</p>
+                        <p className="userName">{User.name} {User.title ? User.title : ""}</p>
                         <p className="nickName">{User.nickname}</p>
                     </div>
                     <div className="pointHint">
@@ -274,7 +274,7 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">{User.name}</p>
+                        <p className="userName">{User.name} {User.title ? User.title : ""}</p>
                         <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>
@@ -308,7 +308,7 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">{User.name}</p>
+                        <p className="userName">{User.name} {User.title ? User.title : ""}</p>
                         <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>

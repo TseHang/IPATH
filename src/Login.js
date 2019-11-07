@@ -60,6 +60,14 @@ const img_list = {
   '0052': uesrImg0052,
 }
 
+const title_list = {
+  '0001': '董事長',
+  '0002': '總經理',
+  '0007': '總經理',
+  '0051': '校長',
+  '0052': '研發長'
+}
+
 function Login(props) {
   // context
   const [user, setUser] = useContext(UserContext);
@@ -79,7 +87,8 @@ function Login(props) {
             'record': data.data.record,
             'calories': data.data.calories,
             'nickname': data.data.nickname,
-            'img': img_list[data.data.nickname]
+            'img': img_list[data.data.nickname],
+            'title': title_list[data.data.nickname]
           };
           if (!userData.img) {
             userData.img = guestImg;

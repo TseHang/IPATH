@@ -58,7 +58,7 @@ const BottomBody = styled.div`
 
 const UserPoint = styled.div`
     display: flex;
-    flex-position: row;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -92,7 +92,7 @@ function Profile() {
                 <div className="topBody" />
                 <UserImg src={User.img}/>
                 <UserInfo>
-                    <p className="userName">{User.name}</p>
+                    <p className="userName">{User.name} {User.title ? User.title : ""}</p>
                     <p className="nickName">{User.nickname}</p>
                 </UserInfo>
             </InnerBoby>

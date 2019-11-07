@@ -283,7 +283,7 @@ function Shop() {
             <div>
                 <Nav title={"iPATH 學生點數系統"}/>
                 <UserInfo src={bodyImg}>
-                    <h1>{User.name}</h1>
+                    <h1>{User.name} {User.title ? User.title : ""}</h1>
                     <CurrPoint>
                         <div className="dot"></div>
                         <p>目前持有 </p>
