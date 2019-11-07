@@ -82,7 +82,7 @@ const UserPoint = styled.div`
 `;
 
 function Profile() {
-    const testing_point = 116;
+    const User = JSON.parse(sessionStorage.getItem('User'));
 
     return (
         <div className="profile">
@@ -91,15 +91,15 @@ function Profile() {
                 <div className="topBody" />
                 <UserImg src={userImg}/>
                 <UserInfo>
-                    <p className="userName">UserName</p>
-                    <p className="nickName">NickName</p>
+                    <p className="userName">{User.name}</p>
+                    <p className="nickName">{User.nickname}</p>
                 </UserInfo>
             </InnerBoby>
             <BottomBody>
                 <UserPoint>
                     <div className="dot" />
                     <p>目前持有 </p>
-                    <p className="point">{testing_point}</p>
+                    <p className="point">{User.record}</p>
                     <p> 點</p>
                     <div className="dot" />
                 </UserPoint>

@@ -44,17 +44,37 @@ const QRScanner = styled(QrReader)`
   border: solid 3px #aaaaaa;
 `;
 
+const defaultUser = {
+  'name': 'defaultName',
+  'record': 100,
+  'calories': 0,
+  'nickname': '0000'
+};
+
 function Login(props) {
   const [result, setResult] = useState(null);
   const onScan = data => {
     if (data) {
       setResult(data);
-      alert(`我掃到的資料是：${data}`);
+      alert(`歡迎：${data}`);
+
+      // fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
+      //   .then(response => response.json())
+      //   .then(data => {
+      //     console.log(data);
+      //   }).catch(e => console.log('error: ', e));
+      
       props.history.push("/profile");
     }
   };
 
-  console.log(props);
+  // console.log(props);
+  // fetch(`http://140.116.249.173:5000/api/IPath/1150`, {mode: 'GET'})
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         console.log(data);
+  //       }).catch(e => console.log('error: ', e));
+  sessionStorage.setItem('User', JSON.stringify(defaultUser));
 
   return (
     <div className="login">

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "pg": "^7.12.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-qr-reader": "^2.2.1",

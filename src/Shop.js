@@ -264,7 +264,8 @@ const RemainedPoint = styled.div`
 `;
 
 function Shop() {
-    const testing_point = 116;
+    const User = JSON.parse(sessionStorage.getItem('User'));
+    
     const testing_item1 = "紅茶 + 飲料提袋";
     const testing_item2 = "藝術中心紀念品";
     const testing_cost1 = 100;
@@ -273,18 +274,18 @@ function Shop() {
     const [page, setPage] = useState("shop");
     const [item, setItem] = useState(null);
     const [cost, setCost] = useState(0);
-    const [currPoint, setCurrPoint] = useState(testing_point);
+    const [currPoint, setCurrPoint] = useState(User.record);
 
     if (page === "shop") {
         return (
             <div>
                 <Nav title={"IPATH 學生點數系統"}/>
                 <UserInfo src={bodyImg}>
-                    <h1>UserName</h1>
+                    <h1>{User.name}</h1>
                     <CurrPoint>
                         <div className="dot"></div>
                         <p>目前持有 </p>
-                        <p className="point">{testing_point}</p>
+                        <p className="point">{User.record}</p>
                         <p> 點</p>
                         <div className="dot"></div>
                     </CurrPoint>

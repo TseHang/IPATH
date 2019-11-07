@@ -212,9 +212,7 @@ const HintBox = styled.div`
 function Event(props) {
     // page state: ["event", "tainan", "sportUndo", "sportDone"]
     const [page, setPage] = useState("event");
-
-    var testingCalories = 0;
-    var testingPoint = 116;
+    const User = JSON.parse(sessionStorage.getItem('User'));
 
     if (page === "event") {
         return (
@@ -247,13 +245,13 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{User.name}</p>
+                        <p className="nickName">{User.nickname}</p>
                     </div>
                     <div className="pointHint">
                         <div className="dot" />
                         <p>踏溯持有點數 </p>
-                        <p className="point">{testingPoint}</p>
+                        <p className="point">{User.record}</p>
                         <p> 點</p>
                         <div className="dot" />
                     </div>
@@ -274,8 +272,8 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{User.name}</p>
+                        <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
@@ -285,13 +283,13 @@ function Event(props) {
                     <HintBox>
                         <div className="calHint">
                             <p>已消耗卡路里</p>
-                            <p className="calories">{testingCalories}</p>
+                            <p className="calories">{User.calories}</p>
                             <p>大卡</p>
                         </div>
                         <div className="pointHint">
                             <div className="dot" />
                             <p>目前持有 </p>
-                            <p className="point">{testingPoint}</p>
+                            <p className="point">{User.record}</p>
                             <p> 點</p>
                             <div className="dot" />
                         </div>
@@ -308,8 +306,8 @@ function Event(props) {
                 <InnerBody src={sport_bodyImg}>
                     <UserImg src={tsetingUserImg} alt="userImg"/>
                     <div className="nameBlock1">
-                        <p className="userName">UserName</p>
-                        <p className="nickName">userID</p>
+                        <p className="userName">{User.name}</p>
+                        <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
@@ -319,13 +317,13 @@ function Event(props) {
                     <HintBox>
                         <div className="calHint">
                             <p>已消耗卡路里</p>
-                            <p className="calories">{testingCalories}</p>
+                            <p className="calories">{User.calories}</p>
                             <p>大卡</p>
                         </div>
                         <div className="pointHint">
                             <div className="dot" />
                             <p>目前持有 </p>
-                            <p className="point">{testingPoint}</p>
+                            <p className="point">{User.record}</p>
                             <p> 點</p>
                             <div className="dot" />
                         </div>
