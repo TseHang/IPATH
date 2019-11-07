@@ -1,23 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae8d21e4828816c194f93dd787c07298",
+    "revision": "b616eebd220279da99cc59a372f75e96",
     "url": "/IPATH/index.html"
   },
   {
-    "revision": "38abce2853caf2d4db78",
+    "revision": "a993638ed2544d7c1eb2",
     "url": "/IPATH/static/css/main.64072854.chunk.css"
   },
   {
-    "revision": "2429dfc9b54c370c9140",
-    "url": "/IPATH/static/js/2.78b26452.chunk.js"
+    "revision": "95a06411a16d86f91293",
+    "url": "/IPATH/static/js/2.2683bf3d.chunk.js"
   },
   {
-    "revision": "38abce2853caf2d4db78",
-    "url": "/IPATH/static/js/main.273d4f71.chunk.js"
+    "revision": "a993638ed2544d7c1eb2",
+    "url": "/IPATH/static/js/main.7f3a5154.chunk.js"
   },
   {
     "revision": "a54d0ea7f40975be1017",
     "url": "/IPATH/static/js/runtime-main.eaa17d45.js"
+  },
+  {
+    "revision": "49373767f36c996c3ecdfcb4d9417bf6",
+    "url": "/IPATH/static/media/0001.49373767.png"
+  },
+  {
+    "revision": "f9ed6c79d943550dd7890d04ae89ce03",
+    "url": "/IPATH/static/media/0002.f9ed6c79.png"
+  },
+  {
+    "revision": "cb653c55950f6ad6a76f805a63f3094f",
+    "url": "/IPATH/static/media/0007.cb653c55.png"
+  },
+  {
+    "revision": "1653b77f596b67892122959cd5fc5e00",
+    "url": "/IPATH/static/media/0051.1653b77f.png"
+  },
+  {
+    "revision": "32ecfc63938ca4b0c5ea296848ca5012",
+    "url": "/IPATH/static/media/0052.32ecfc63.png"
   },
   {
     "revision": "b509e81f1aa8e98f089c0680a69a2115",
