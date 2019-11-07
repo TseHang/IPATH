@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './App.css';
 import styled from "styled-components";
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-import userImg from './img/principle.png';
 import bodyImg from './img/profilebb.png';
+
+import {UserContext} from './App';
 
 const InnerBoby = styled.div`
     height: 47vh;
@@ -82,14 +83,14 @@ const UserPoint = styled.div`
 `;
 
 function Profile() {
-    const User = JSON.parse(sessionStorage.getItem('User'));
+    const [User] = useContext(UserContext);
 
     return (
         <div className="profile">
             <Nav title={"IPATH 學生點數系統"}/>
             <InnerBoby>
                 <div className="topBody" />
-                <UserImg src={userImg}/>
+                <UserImg src={User.img}/>
                 <UserInfo>
                     <p className="userName">{User.name}</p>
                     <p className="nickName">{User.nickname}</p>

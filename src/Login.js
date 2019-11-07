@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import QrReader from "react-qr-reader";
 import { withRouter } from "react-router-dom";
+import uesrImg0001 from './img/0001.png';
+import uesrImg0002 from './img/0002.png';
+import uesrImg0007 from './img/0007.png';
+import uesrImg0051 from './img/0051.png';
+import uesrImg0052 from './img/0052.png';
+import guestImg from './img/guest.png';
+
+import {UserContext} from './App';
 
 const Rectangle = styled.div`
   position: fixed;
@@ -44,37 +52,44 @@ const QRScanner = styled(QrReader)`
   border: solid 3px #aaaaaa;
 `;
 
-const defaultUser = {
-  'name': 'defaultName',
-  'record': 100,
-  'calories': 0,
-  'nickname': '0000'
-};
+const img_list = {
+  '0001': uesrImg0001,
+  '0002': uesrImg0002,
+  '0007': uesrImg0007,
+  '0051': uesrImg0051,
+  '0052': uesrImg0052,
+}
 
 function Login(props) {
+  // context
+  const [user, setUser] = useContext(UserContext);
+  // state
   const [result, setResult] = useState(null);
   const onScan = data => {
     if (data) {
       setResult(data);
       alert(`歡迎：${data}`);
 
-      // fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
-      //   .then(response => response.json())
-      //   .then(data => {
-      //     console.log(data);
-      //   }).catch(e => console.log('error: ', e));
+      fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
+        .then(response => response.json())
+        .then(data => {
+          const userData = {
+            'name': data.data.name,
+            'record': data.data.record,
+            'calories': data.data.calories,
+            'nickname': data.data.nickname,
+            'img': img_list[data.data.nickname]
+          };
+          if (!userData.img) {
+            userData.img = guestImg;
+          }
+          // set context
+          setUser(userData);
+        }).catch(e => console.log('error: ', e));
       
       props.history.push("/profile");
     }
   };
-
-  // console.log(props);
-  // fetch(`http://140.116.249.173:5000/api/IPath/1150`, {mode: 'GET'})
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         console.log(data);
-  //       }).catch(e => console.log('error: ', e));
-  sessionStorage.setItem('User', JSON.stringify(defaultUser));
 
   return (
     <div className="login">

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import './App.css';
 import styled from "styled-components";
 
@@ -10,6 +10,8 @@ import checkIncon from './img/check.png';
 import bodyImg from './img/productbb.png';
 import drinkImg from './img/drink_bag.png';
 import souvenirImg from './img/souvenir.jpg';
+
+import {UserContext} from './App';
 
 // SHOP PAGE
 const UserInfo = styled.div`
@@ -264,7 +266,7 @@ const RemainedPoint = styled.div`
 `;
 
 function Shop() {
-    const User = JSON.parse(sessionStorage.getItem('User'));
+    const [User] = useContext(UserContext);
     
     const testing_item1 = "紅茶 + 飲料提袋";
     const testing_item2 = "藝術中心紀念品";

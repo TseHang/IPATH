@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -12,16 +12,21 @@ import GlobalStyles from "./theme/GlobalStyles";
 // for github env
 const baseName = process.env.NODE_ENV === "production" ? "/IPATH" : "";
 
+export const UserContext = React.createContext({});
+
 function App() {
-  return (
+  const [user, setUser] = useState({});
+   return (
     <Router basename={baseName}>
       <div className="App">
-        <Switch>
-          <Route path="/profile" component={Profile} />
-          <Route path="/shop" component={Shop} />
-          <Route path="/event" component={Event} />
-          <Route path="/" exact component={Login} />
-        </Switch>
+        <UserContext.Provider value={[user, setUser]}>
+          <Switch>
+            <Route path="/profile" component={Profile} />
+            <Route path="/shop" component={Shop} />
+            <Route path="/event" component={Event} />
+            <Route path="/" exact component={Login} />
+          </Switch>
+        </UserContext.Provider>
       </div>
       <ResetStyles />
       <GlobalStyles />

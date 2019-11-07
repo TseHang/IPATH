@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import styled from "styled-components";
 import './App.css';
 
@@ -9,9 +9,10 @@ import TainanEvent from './components/TainanEvent';
 import ipathImg from './img/IPATH.jpg';
 import tainanImg from './img/Tainan.jpg';
 import backIcon from './img/back.png';
-import tsetingUserImg from './img/principle.png';
 import bodyImg from './img/selecbb.png';
 import sport_bodyImg from './img/tainan_sportbb.png';
+
+import {UserContext} from './App';
 
 const InnerBody = styled.div`
     width: 100%;
@@ -211,8 +212,9 @@ const HintBox = styled.div`
 
 function Event(props) {
     // page state: ["event", "tainan", "sportUndo", "sportDone"]
+    const [User] = useContext(UserContext);
     const [page, setPage] = useState("event");
-    const User = JSON.parse(sessionStorage.getItem('User'));
+    console.log(User);
 
     if (page === "event") {
         return (
@@ -243,7 +245,7 @@ function Event(props) {
                 <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"踏溯台南點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
+                    <UserImg src={User.img} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
                         <p className="userName">{User.name}</p>
                         <p className="nickName">{User.nickname}</p>
@@ -270,7 +272,7 @@ function Event(props) {
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg"/>
+                    <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">{User.name}</p>
                         <p className="nickName">{User.nickname}</p>
@@ -304,7 +306,7 @@ function Event(props) {
             <BackBtn src={backIcon} alt="back" onClick={() => {setPage("event")}} />
                 <Nav title={"IPATH 學生點數系統"} />
                 <InnerBody src={sport_bodyImg}>
-                    <UserImg src={tsetingUserImg} alt="userImg"/>
+                    <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">{User.name}</p>
                         <p className="nickName">{User.nickname}</p>
