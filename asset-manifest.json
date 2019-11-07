@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/IPATH/static/css/main.64072854.chunk.css",
-    "main.js": "/IPATH/static/js/main.eb8e3401.chunk.js",
-    "main.js.map": "/IPATH/static/js/main.eb8e3401.chunk.js.map",
+    "main.js": "/IPATH/static/js/main.30c62793.chunk.js",
+    "main.js.map": "/IPATH/static/js/main.30c62793.chunk.js.map",
     "runtime-main.js": "/IPATH/static/js/runtime-main.eaa17d45.js",
     "runtime-main.js.map": "/IPATH/static/js/runtime-main.eaa17d45.js.map",
     "static/js/2.2683bf3d.chunk.js": "/IPATH/static/js/2.2683bf3d.chunk.js",
     "static/js/2.2683bf3d.chunk.js.map": "/IPATH/static/js/2.2683bf3d.chunk.js.map",
     "index.html": "/IPATH/index.html",
-    "precache-manifest.c215bf750af4e67e57818b5c2f89db15.js": "/IPATH/precache-manifest.c215bf750af4e67e57818b5c2f89db15.js",
+    "precache-manifest.a2869d8f4a314df0640152b6afe0b77e.js": "/IPATH/precache-manifest.a2869d8f4a314df0640152b6afe0b77e.js",
     "service-worker.js": "/IPATH/service-worker.js",
     "static/css/main.64072854.chunk.css.map": "/IPATH/static/css/main.64072854.chunk.css.map",
     "static/media/0001.png": "/IPATH/static/media/0001.49373767.png",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.eaa17d45.js",
     "static/js/2.2683bf3d.chunk.js",
     "static/css/main.64072854.chunk.css",
-    "static/js/main.eb8e3401.chunk.js"
+    "static/js/main.30c62793.chunk.js"
   ]
 }
