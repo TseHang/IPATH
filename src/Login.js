@@ -70,7 +70,8 @@ function Login(props) {
       setResult(data);
       alert(`歡迎：${data}`);
 
-      fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
+      // fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
+      fetch(`https://ecece197.ngrok.io/api/IPath/${data}`)
         .then(response => response.json())
         .then(data => {
           const userData = {
