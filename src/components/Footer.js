@@ -49,7 +49,7 @@ function Footer (props) {
             <Link to='/event'>
                 <div className='footer-item-block'>
                     <img src={eventIcon} alt="Event" />
-                    <p style={eventStyle}>活動選擇</p>
+                    <p style={eventStyle}>活動紀錄</p>
                 </div>
             </Link>
             <Link to='/shop'>
