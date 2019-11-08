@@ -221,7 +221,7 @@ function Event(props) {
             <div className="event">
                 <Nav title={"iPATH 學生點數系統"} back={false} />
                 <InnerBody src={bodyImg} style={{height: '54.5vh'}}>
-                    <p className="innerTitle">活動選擇</p>
+                    <p className="innerTitle">活動紀錄</p>
                     <EventBlockLeft src={ipathImg} onClick={() => {setPage("sportUndo")}}>
                         <BlockTitle>
                             <p>智能運動地墊系統</p>
