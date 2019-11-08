@@ -76,10 +76,9 @@ function Login(props) {
   const onScan = data => {
     if (data) {
       setResult(data);
-      alert(`歡迎：${data}`);
 
-      // fetch(`http://140.116.249.173:5000/api/IPath/${data}`)
-      fetch(`https://ecece197.ngrok.io/api/IPath/${data}`)
+      // fetch(`http://140.116.249.173:5000/api/IPath/${data}`) this API is for http
+      fetch(`https://ecece197.ngrok.io/api/IPath/${data}`) //this API is for https
         .then(response => response.json())
         .then(data => {
           const userData = {
