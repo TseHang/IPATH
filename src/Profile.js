@@ -39,10 +39,6 @@ const UserImg = styled.img`
 const UserInfo = styled.div`
     width: 100%;
     transform: translateY(-2vh);
-
-    .nickName {
-        margin-top: 2vh;
-    }
 `;
 
 const BottomBody = styled.div`
@@ -93,7 +89,6 @@ function Profile() {
                 <UserImg src={User.img}/>
                 <UserInfo>
                     <p className="userName">{User.name} {User.title ? User.title : ""}</p>
-                    <p className="nickName">{User.nickname}</p>
                 </UserInfo>
             </InnerBoby>
             <BottomBody>

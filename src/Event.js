@@ -248,7 +248,6 @@ function Event(props) {
                     <UserImg src={User.img} alt="userImg" style={{'transform':'translateX(-10vw)', 'display':'inline-block'}}/>
                     <div className="nameBlock2">
                         <p className="userName">{User.name} {User.title ? User.title : ""}</p>
-                        <p className="nickName">{User.nickname}</p>
                     </div>
                     <div className="pointHint">
                         <div className="dot" />
@@ -275,7 +274,6 @@ function Event(props) {
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">{User.name} {User.title ? User.title : ""}</p>
-                        <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
@@ -309,7 +307,6 @@ function Event(props) {
                     <UserImg src={User.img} alt="userImg"/>
                     <div className="nameBlock1">
                         <p className="userName">{User.name} {User.title ? User.title : ""}</p>
-                        <p className="nickName">{User.nickname}</p>
                     </div>
                 </InnerBody>
                 <BottomBody>
