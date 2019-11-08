@@ -20,7 +20,7 @@ const InnerBody = styled.div`
     text-align: center;
     position: relative;
     background-image: url(${props => props.src});
-    background-repeat: np-repeat;
+    background-repeat: no-repeat;
     object-fit: fill;
     background-color: #e8e8e8;
 
@@ -115,7 +115,7 @@ const BlockTitle = styled.div`
 
     p {
         width: 100%;
-        color: #ffffff
+        color: #ffffff;
         letter-spacing: 2px;
         font-size: 30px;
         line-height: 6vh;
@@ -123,7 +123,7 @@ const BlockTitle = styled.div`
 `;
 
 const BottomBody = styled.div`
-    width: 100%
+    width: 100%;
     height: 28.5vh;
     background-color: #ffffff;
     text-align: center;
