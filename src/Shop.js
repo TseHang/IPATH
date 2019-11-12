@@ -322,7 +322,13 @@ function Shop() {
                     </Cost>
                     <Btn>
                         <CencelBtn onClick={() => {setPage("shop"); setItem(null); setCost(0)}}>取消兌換</CencelBtn>
-                        <ConfirmBtn onClick={() => {setPage("success"); setCurrPoint(currPoint-cost)}}>確認兌換</ConfirmBtn>
+                        <ConfirmBtn onClick={() => {
+                            setPage("success"); 
+                            setCurrPoint(currPoint-cost);
+                            fetch(`https://60fb3bc2.ngrok.io/api/IPath/${User.nickname}?tradepoints=${cost}`, {method: 'POST'})
+                                .then(response => response.json())
+                                .then(data => console.log(data));
+                        }}>確認兌換</ConfirmBtn>
                     </Btn>
                     
                 </ConfirmBody>
