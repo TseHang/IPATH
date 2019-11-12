@@ -78,12 +78,12 @@ function Login(props) {
       setResult(data);
 
       // fetch(`http://140.116.249.173:5000/api/IPath/${data}`) this API is for http
-      fetch(`https://ecece197.ngrok.io/api/IPath/${data}`) //this API is for https
+      fetch(`https://60fb3bc2.ngrok.io/api/IPath/${data}`) //this API is for https
         .then(response => response.json())
         .then(data => {
           const userData = {
             'name': data.data.name,
-            'record': data.data.record,
+            'record': data.data.record - data.data.points,
             'calories': data.data.calories,
             'nickname': data.data.nickname,
             'img': img_list[data.data.nickname],
