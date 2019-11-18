@@ -3,6 +3,7 @@
 - screen size : 768*1024
 ## Script
 - run : `npm start` in root
+- deploy : `npm run-script deploy` in root, 會 deploy 到所屬 github 的 'gh-page' branch
 ## 目前能改進的地方
 ### 結構上
 1. 把 Event.js 和 Shop.js 中各 state 對應的 page 以 components 的形式拉出去
