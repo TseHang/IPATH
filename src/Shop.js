@@ -268,7 +268,7 @@ const RemainedPoint = styled.div`
 function Shop() {
     const [User] = useContext(UserContext);
     
-    const testing_item1 = "紅茶 + 飲料提袋";
+    const testing_item1 = "飲料提袋";
     const testing_item2 = "藝術中心紀念品";
     const testing_cost1 = 100;
     const testing_cost2 = 100;
